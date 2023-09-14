@@ -14,38 +14,38 @@
 >Linux虐我千百遍，我待Linux如初恋
 >这里的内容是我学习Linux的一些记录，希望能一直坚持下去
 
-### 目录
+### 大纲
 > * [环境配置](https://py3.io/doc/python/quickstart.html)
 > * 基础语法
->   * XXX
->   * requests使用多IP请求
->   * [Python多线程模板](code/MultiThread_Template.py)
+>  * XXX
+>  * requests使用多IP请求
+>  * [Python多线程模板](code/MultiThread_Template.py)
 
 
---
+
 ## [数据结构和算法](数据结构和算法.md)
 >算法虐我千百遍，我待算法如初恋
 >这些算法全部自己敲一遍：
-### 目录
+### 大纲
 > * [链表](https://py3.io/doc/python/quickstart.html)
 > * 数组
->   * 数组数列问题
->   * requests使用多IP请求
->   * [Python多线程模板](code/MultiThread_Template.py)
+>  * 数组数列问题
+>  * requests使用多IP请求
+>  * [Python多线程模板](code/MultiThread_Template.py)
 > * 队列
->   * 队列
->   * 堆栈
+>  * 队列
+>  * 堆栈
 > * 哈希表 HashTable
->   * 散列函数
->   * 碰撞解决
+>  * 散列函数
+>  * 碰撞解决
 > * 字符串算法
->   * 子串查找 [字符串常见题目参考这里](9%20Algorithms%20Job%20Interview/1%20字符串.md) 
->   * BF算法  
->   * KMP算法  
->   * BM算法  
->   * 正则表达式
->   * 数据压缩
->   * 排序
+>  * 子串查找 [字符串常见题目参考这里](9%20Algorithms%20Job%20Interview/1%20字符串.md) 
+>  * BF算法  
+>  * KMP算法  
+>  * BM算法  
+>  * 正则表达式
+>  * 数据压缩
+>  * 排序
 
 
 ### [树](4%20Tree/README.md)
