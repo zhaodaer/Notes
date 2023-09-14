@@ -1,5 +1,3 @@
-
-
 ![夜尽天明](https://upload-images.jianshu.io/upload_images/12890819-6e2289f29c0d3b39.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 # zhaodaer's Notebook
 
@@ -8,19 +6,21 @@
 以技术笔记为主，记录自己平常学习到知识，以便以后查阅。
 希望做一个终身学习者
 
-## [Linux](Python.md)
+## [Linux](Linux.md)
 >Linux虐我千百遍，我待Linux如初恋
-这里的内容是我学习Linux的一些记录，希望能一直坚持下去。
->* [环境配置](https://py3.io/doc/python/quickstart.html)
->* 基础语法
->* XXX
->* requests使用多IP请求
->* [Python多线程模板](code/MultiThread_Template.py)
+>这里的内容是我学习Linux的一些记录，希望能一直坚持下去
+### 目录
+--
+> * [环境配置](https://py3.io/doc/python/quickstart.html)
+> * 基础语法
+>  * XXX
+>  * requests使用多IP请求
+>  * [Python多线程模板](code/MultiThread_Template.py)
 >* http.server（BaseHTTPServer）并发性改善 不必修改库文件
 
 
 ## 学习方法
-
+--
 * 你现在已经有了一些Linux的基础了，应该系统学一下了
 * 先把韦东山嵌入式Linux完整看一遍(不要全看，挑着看  
 * 看经典书籍（鸟哥的Linux私房菜很不错）
@@ -29,19 +29,19 @@
 * 刷题   
 
 ## 计划
-
+--
 * 添加备忘录清单（reference）
 * Docker的使用
 
 
 ## 第一节
-
+--
 * 绝对路径用 \   相对路径用 /
 * Shell命令  PATH环境变量设置
 * ./ 表示当前目录下进行操作
-
+--
 ## 基本数据结构和算法
-
+--
 这些算法全部自己敲一遍：
 
 ### [链表](2%20List/README.md)
