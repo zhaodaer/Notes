@@ -17,10 +17,9 @@
 ### 目录
 > * [环境配置](https://py3.io/doc/python/quickstart.html)
 > * 基础语法
->  * XXX
->  * requests使用多IP请求
->  * [Python多线程模板](code/MultiThread_Template.py)
->* http.server（BaseHTTPServer）并发性改善 不必修改库文件
+>   * XXX
+>   * requests使用多IP请求
+>   * [Python多线程模板](code/MultiThread_Template.py)
 
 
 ### 学习方法
@@ -44,23 +43,23 @@
 ### 目录
 > * [链表](https://py3.io/doc/python/quickstart.html)
 > * 数组
->  * 数组数列问题
->  * requests使用多IP请求
->  * [Python多线程模板](code/MultiThread_Template.py)
+>   * 数组数列问题
+>   * requests使用多IP请求
+>   * [Python多线程模板](code/MultiThread_Template.py)
 > * 队列
->  * 队列
->  * 堆栈
+>   * 队列
+>   * 堆栈
 > * 哈希表 HashTable
->  * 散列函数
->  * 碰撞解决
+>   * 散列函数
+>   * 碰撞解决
 > * 字符串算法
->  * 子串查找 [字符串常见题目参考这里](9%20Algorithms%20Job%20Interview/1%20字符串.md) 
->  * BF算法  
->  * KMP算法  
->  * BM算法  
->  * 正则表达式
->  * 数据压缩
->  * 排序
+>   * 子串查找 [字符串常见题目参考这里](9%20Algorithms%20Job%20Interview/1%20字符串.md) 
+>   * BF算法  
+>   * KMP算法  
+>   * BM算法  
+>   * 正则表达式
+>   * 数据压缩
+>   * 排序
 
 
 ### [树](4%20Tree/README.md)
