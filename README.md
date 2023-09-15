@@ -19,7 +19,7 @@
 >Linux虐我千百遍，我待Linux如初恋  
 >这里的内容是我学习Linux的一些记录，希望能一直坚持下去
 
-### ``大纲``
+### 主要包括：
 > * [环境配置](https://py3.io/doc/python/quickstart.html)
 > * 基础语法
 >   * XXX
@@ -27,15 +27,7 @@
 > * [应用开发](code/MultiThread_Template.py)
 
 
-&nbsp; 
-&nbsp; 
-&nbsp; 
-&nbsp; 
-&nbsp; 
-&nbsp; 
-&nbsp; 
-&nbsp; 
-
+  
 ## 二、[数据结构和算法](数据结构和算法.md)
 >算法虐我千百遍，我待算法如初恋  
 >这些算法全部自己敲一遍：
