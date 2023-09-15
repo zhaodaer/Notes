@@ -9,12 +9,11 @@
 ## 计划
 * 添加备忘录清单（reference）
 * Docker的使用
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp; 
-&nbsp; 
-&nbsp; 
+<br>
+<br>
+<br>
+<br>
+<br>
 ## 一、[Linux](Linux.md)
 >Linux虐我千百遍，我待Linux如初恋  
 >这里的内容是我学习Linux的一些记录，希望能一直坚持下去
