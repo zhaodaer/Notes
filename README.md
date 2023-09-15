@@ -19,12 +19,12 @@
 >Linux虐我千百遍，我待Linux如初恋  
 >这里的内容是我学习Linux的一些记录，希望能一直坚持下去
 
-### 大纲
-> * [环境配置](https://py3.io/doc/python/quickstart.html)
-> * 基础语法
->   * XXX
->   * requests使用多IP请求
-> * [应用开发](code/MultiThread_Template.py)
+&nbsp;&nbsp;### 大纲
+&nbsp;&nbsp;> * [环境配置](https://py3.io/doc/python/quickstart.html)
+&nbsp;&nbsp;> * 基础语法
+&nbsp;&nbsp;>   * XXX
+&nbsp;&nbsp;>   * requests使用多IP请求
+&nbsp;&nbsp;> * [应用开发](code/MultiThread_Template.py)
 
 
 &nbsp; 
