@@ -1,12 +1,12 @@
 ![夜尽天明](https://upload-images.jianshu.io/upload_images/12890819-6e2289f29c0d3b39.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 # zhaodaer's Notebook
 
->**芳华正茂始少年，时光正好，未来可期 ！**
+>**打不倒我的，只会让我更强大 ！**
 
-以技术笔记为主，记录自己平常学习到知识，以便以后查阅。
+以技术笔记为主，记录自己平常学习到知识，以便以后查阅。  
 希望做一个终身学习者
 
-### 计划
+## 计划
 * 添加备忘录清单（reference）
 * Docker的使用
 &nbsp;
@@ -15,8 +15,8 @@
 &nbsp; 
 &nbsp; 
 &nbsp; 
-## [Linux](Linux.md)
->Linux虐我千百遍，我待Linux如初恋
+## [一、Linux](Linux.md)
+>Linux虐我千百遍，我待Linux如初恋  
 >这里的内容是我学习Linux的一些记录，希望能一直坚持下去
 
 ### 大纲
