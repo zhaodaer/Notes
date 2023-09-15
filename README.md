@@ -15,7 +15,7 @@
 &nbsp; 
 &nbsp; 
 &nbsp; 
-## [一、Linux](Linux.md)
+## 一、[Linux](Linux.md)
 >Linux虐我千百遍，我待Linux如初恋  
 >这里的内容是我学习Linux的一些记录，希望能一直坚持下去
 
@@ -36,8 +36,8 @@
 &nbsp; 
 &nbsp; 
 
-## [数据结构和算法](数据结构和算法.md)
->算法虐我千百遍，我待算法如初恋
+## 二、[数据结构和算法](数据结构和算法.md)
+>算法虐我千百遍，我待算法如初恋  
 >这些算法全部自己敲一遍：
 ### 大纲
 > * [链表](https://py3.io/doc/python/quickstart.html)
