@@ -19,7 +19,7 @@
 >Linux虐我千百遍，我待Linux如初恋  
 >这里的内容是我学习Linux的一些记录，希望能一直坚持下去
 
-``### 大纲
+### ``大纲
 > * [环境配置](https://py3.io/doc/python/quickstart.html)
 > * 基础语法
 >   * XXX
