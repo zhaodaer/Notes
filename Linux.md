@@ -52,8 +52,13 @@ chowm  改变文件的所有者    chown root root <某个文件>  改变文件�
 root用户切换、登录、设置密码（不建议用）  
 
 
+find命令  find abc -name *.1.txt    指定当前目录下的abc文件夹下查找名字为1.1.txt、2.1.txt等文件  
+grep命令  grep "xyz" * -nwr    递归查找当前目录下的所以文件中含有xyz字符的文件  
 
 
+
+压缩命令 tar czf abc def  创建压缩包 用gzip命令压缩 将def文件压缩为名为abc的压缩包（也可以压缩目录）  
+解压命令 tar xzf abc -C aaa    将压缩包abc解压到aaa目录里去 用gzip解压  
 
 
 
