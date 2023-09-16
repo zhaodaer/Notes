@@ -1,9 +1,15 @@
 ### 目录
 > * [环境配置](https://py3.io/doc/python/quickstart.html)
-> * 基础语法
+> * 基础命令
 >   * XXX
 >   * requests使用多IP请求
 >   * [Python多线程模板](code/MultiThread_Template.py)
+
+
+> * vi文本编辑器
+> * Shell与Shell脚本
+> * 软件管理
+> * 网络基础
 
 
 ### 学习方法
@@ -19,3 +25,7 @@
 * 绝对路径用 \   相对路径用 /
 * Shell命令  PATH环境变量设置
 * ./ 表示当前目录下进行操作
+
+
+在Linux系统中，每个设备都被当成一个文件来对待
+例如SATA接口的硬盘文件名为/dev/sd[a-d]
