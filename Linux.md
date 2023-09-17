@@ -56,8 +56,17 @@
 | tar  |   压缩                 |     tar czf abc def              |  创建压缩包 用gzip命令压缩 将def文件压缩为名为abc的压缩包（也可以压缩目录） |
 |     |    解压                |     tar xzf abc -C aaa            | 将压缩包abc解压到aaa目录里去 用gzip解压  |
 
-
-
-
+vi命令：
+![image](https://github.com/zhaodaer/Notes/assets/141413040/0ef785b2-29ad-425a-b9b7-d1534f6e392d)
+保存退出        :wq
+不保存退出       :q!
+:set number   显示行号
+:set nonumber   不显示行号
+:256  跳到第256行
+ctrl+f  向前翻页
+ctrl+b  向后翻页
+G:跳到文件结尾
+0:跳到行首
+$:跳到行尾
 
 
