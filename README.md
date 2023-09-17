@@ -4,9 +4,9 @@
 >**打不倒我的，只会让我更强大 ！**
 
 ## 引言
-> - 以技术笔记为主，记录自己平常学习到知识，以便以后查阅。  
+> - 以技术笔记为主，记录自己平常学习到知识，以便以后查阅  
 > - 希望做一个终身学习者
-> - **daer 的公众号**：[访问链接](https://mp.weixin.qq.com/s/NTRnfdPcr2pVnTvhFMYJCg)
+> - **Daer 的公众号**：[访问链接](https://mp.weixin.qq.com/s/NTRnfdPcr2pVnTvhFMYJCg)
 
 
 
@@ -36,10 +36,10 @@
 
 ### 主要包括：
 > * [环境配置](https://py3.io/doc/python/quickstart.html)
-> * 基础语法
+> * [基础命令](https://py3.io/doc/python/quickstart.html)
+> * [应用开发](code/MultiThread_Template.py)
 >   * XXX
 >   * requests使用多IP请求
-> * [应用开发](code/MultiThread_Template.py)
 <br>
 <br>
 <br>
