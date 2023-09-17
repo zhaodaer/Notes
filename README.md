@@ -27,7 +27,7 @@
 |          | [B 站淘了 2 个 Java 实战项目：选一个认真钻研即可](https://mp.weixin.qq.com/s/B-Gzw20xKIPC_w4b_8bJiA) | JavaGuide  |
 | 其他     | [备忘录清单（reference）](Java/jdk/README.md)                                                                | DreamCats  |
 |          | [Docker容器](books.md)                                                                           | DreamCats  |
-|          | [招聘信息](Java/spring-books/README.md)                                                       | DreamCats  |
+|          | [微信公众号运营](Java/spring-books/README.md)                                                       | DreamCats  |
 |          | [在线推送 lc 脚本](https://github.com/DreamCats/dream-script/blob/master/notify_lc.py)               | DreamCats  |
 
 
