@@ -1,17 +1,13 @@
 ![夜尽天明](https://upload-images.jianshu.io/upload_images/12890819-6e2289f29c0d3b39.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-# zhaodaer's Notebook
 
+# zhaodaer's Notebook
 >**打不倒我的，只会让我更强大 ！**
+
 ## 引言
     以技术笔记为主，记录自己平常学习到知识，以便以后查阅。  
     希望做一个终身学习者
 
-## 计划
-* 添加备忘录清单（reference）
-* Docker的使用
-<br>
-<br>
-<br>
+
 
 
 
@@ -19,33 +15,24 @@
 ### 📖 技术栈
 | 类型     | 名称                                                                                                 | 来源       |
 | -------- | ---------------------------------------------------------------------------------------------------- | ---------- |
-| Linux   | [在线面试助手](https://github.com/DreamCats/online-interview)                                        | DreamCats  |
-| 硬件     | [大厂面经汇总](Java/mianjing/README.md)                                                              | DreamCats  |
-| 操作系统 | [Java 后端知识分类](Java/classify/README.md)                                                         | DreamCats  |
-|          | [疯狂吐血系列](Java/crazy/README.md)                                                                 | DreamCats  |
-|          | [知识架构思维导图](Java/mind/README.md)                                                              | DreamCats  |
-| 算法     | [CS-Notes](http://www.cyc2018.xyz/)                                                                  | cyc        |
-|          | [写算法套路模板](https://github.com/labuladong/fucking-algorithm)                                    | labuladong |
-|          | [按热度总结 lc](Java/alg/按热度总结lc.md)                                                            | DreamCats  |
+| Linux   | [Linux](https://github.com/DreamCats/online-interview)                                        | DreamCats  |
+| 硬件     | [FPGA](Java/mianjing/README.md)                                                              | DreamCats  |
+| 操作系统 | [XXX](Java/classify/README.md)                                                         | DreamCats  |
+|  算法    | [数据结构](http://www.cyc2018.xyz/)                                                                  | cyc        |
+|  语言    | [C/C++](https://github.com/labuladong/fucking-algorithm)                                    | labuladong |
+|          | [Python](Java/alg/按热度总结lc.md)                                                            | DreamCats  |
 |          | [剑指 Offer](Java/alg/剑指offer.md)                                                                  | DreamCats  |
-|          | [个人秋招刷熟题](Java/alg/个人刷熟题.md)                                                             | DreamCats  |
-|          | [秋招常考的热点题](Java/alg/README.md)                                                               | DreamCats  |
-|          | [LC-SQL](Java/bishi/sql.md)                                                                          | DreamCats  |
-|          | [图解 SQL 面试题](https://zhuanlan.zhihu.com/p/38354000)                                             | xxx        |
-|          | [牛客走起来](https://www.nowcoder.com/contestRoom)                                                   | xxx        |
 | 项目     | [微服务班车在线预约系统-文档](Java/bus/README.md)                                                    | DreamCats  |
 |          | [微服务班车在线预约系统-项目地址](https://github.com/DreamCats/school-bus)                           | DreamCats  |
 |          | [B 站淘了 2 个 Java 实战项目：选一个认真钻研即可](https://mp.weixin.qq.com/s/B-Gzw20xKIPC_w4b_8bJiA) | JavaGuide  |
-| 其他     | [JDK1.8 部分源码](Java/jdk/README.md)                                                                | DreamCats  |
-|          | [相应阅读的书籍](books.md)                                                                           | DreamCats  |
-|          | [Spring 简要学习](Java/spring-books/README.md)                                                       | DreamCats  |
+| 其他     | [备忘录清单（reference）](Java/jdk/README.md)                                                                | DreamCats  |
+|          | [Docker容器](books.md)                                                                           | DreamCats  |
+|          | [招聘信息](Java/spring-books/README.md)                                                       | DreamCats  |
 |          | [在线推送 lc 脚本](https://github.com/DreamCats/dream-script/blob/master/notify_lc.py)               | DreamCats  |
-|          | [在线推送知识点](https://github.com/DreamCats/dream-script/blob/master/notify_know.py)               | DreamCats  |
+
 
 
 ## 一、[Linux](Linux.md)
->Linux虐我千百遍，我待Linux如初恋  
->这里的内容是我学习Linux的一些记录，希望能一直坚持下去
 
 ### 主要包括：
 > * [环境配置](https://py3.io/doc/python/quickstart.html)
@@ -56,21 +43,6 @@
 <br>
 <br>
 <br>
-
-
-### 📖 一、[Linux](Linux.md)
-
-| 类型 | 题目                                                                                                | 来源       |
-| ---- | --------------------------------------------------------------------------------------------------- | ---------- |
-| 环境配置 | [GET 和 POST 请求的本质区别是什么？原来我一直理解错了](https://segmentfault.com/a/1190000039905721) | 码农突围   |
-| 基础命令 | [懵了！有了 HTTP，为什么还要 RPC](http://mtw.so/6otjBG)                                             | 小哈学     |
-| 应用开发 | [“三次握手，四次挥手”这么讲，保证你忘不了](https://mp.weixin.qq.com/s/QxY2Y8BhGTaGgOG1dyRuFg)       | 三分恶     |
-| 计网 | [超详细 DNS 协议解析](https://juejin.cn/post/6919755385330991112)                                   | 飞天小牛肉 |
-| 计网 | [傻傻分不清之 Cookie、Session、Token、JWT](https://juejin.cn/post/6844904034181070861)              | 秋天不落叶 |
-| 计网 | [简略图解：输入 url 到出现页面，浏览器做了什么？](https://zhuanlan.zhihu.com/p/402559256)           | 又拍云     |
-<br>
-<br>
-<br> 
 
 
 ## 二、[数据结构和算法](数据结构和算法.md)
@@ -141,8 +113,6 @@
 >   * [穷举搜索法](8%20Algorithms%20Analysis/穷举搜索法.md)   
 >   * [贪心算法](8%20Algorithms%20Analysis/贪心算法.md) 
 > * [面试算法题目](9%20Algorithms%20Job%20Interview/README.md)
-
-
 <br>
 <br>
 <br>
