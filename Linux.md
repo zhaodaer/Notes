@@ -9,7 +9,7 @@
 >   * requests使用多IP请求
 >   * [Python多线程模板](code/MultiThread_Template.py)
 
-### 学习方法
+### 🥉学习方法
 * 你现在已经有了一些Linux的基础了，应该系统学一下了
 * 先把韦东山嵌入式Linux完整看一遍(不要全看，挑着看  
 * 看经典书籍（鸟哥的Linux私房菜很不错）
@@ -17,7 +17,7 @@
 * 找2-3个相关项目巩固一下，最好能写在简历上 
 * 刷题   
 
-#### 未解决的问题
+### ❓未解决的问题
 1、Windows下ipconfig出问题了  
 2、Mobaxterm不能远程登录Ubuntu  
 
