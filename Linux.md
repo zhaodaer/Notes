@@ -20,6 +20,12 @@
 ### ❓未解决的问题
 1、Windows下ipconfig出问题了  
 2、Mobaxterm不能远程登录Ubuntu  
+  
+  
+岗位
+应用开发：c/c++，数据结构与算法，shell，qt，网络编程，操作系统，ARM体系与架构。  
+驱动开发：c，数据结构与算法，shell，操作系统，ARM体系与架构，Linux驱动  
+
 
 
 #### 第一节
