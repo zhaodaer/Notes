@@ -6,3 +6,9 @@
 4.  git commit -m “第二次修改”         提交项目文件夹所有文件-提交文件
 5.  git remote add origin git@github.com:zhaodaer/Notes.git   添加远程连接
 6.  git push -u origin main      推送代码到远程
+
+
+
+若出现error: remote origin already exists.
+
+则git remote rm origin 删除关联的origin的远程库
