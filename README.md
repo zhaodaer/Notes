@@ -22,8 +22,8 @@
 |  语言    | [C/C++](https://github.com/labuladong/fucking-algorithm)                                    | labuladong |
 |          | [Python](Java/alg/按热度总结lc.md)                                                            | DreamCats  |
 |          | [剑指 Offer](Java/alg/剑指offer.md)                                                                  | DreamCats  |
-| 项目     | [微服务班车在线预约系统-文档](Java/bus/README.md)                                                    | DreamCats  |
-|          | [微服务班车在线预约系统-项目地址](https://github.com/DreamCats/school-bus)                           | DreamCats  |
+| 项目     | [ Linux平台的运动相机项目、一个单片机项目、一个硬件项目 ](Java/bus/README.md)                                                    | DreamCats  |
+|          | [蓝牙、 Wifi](https://github.com/DreamCats/school-bus)                           | DreamCats  |
 |          | [B 站淘了 2 个 Java 实战项目：选一个认真钻研即可](https://mp.weixin.qq.com/s/B-Gzw20xKIPC_w4b_8bJiA) | JavaGuide  |
 | 其他     | [备忘录清单（reference）](Java/jdk/README.md)                                                                | DreamCats  |
 |          | [Docker容器](books.md)                                                                           | DreamCats  |
