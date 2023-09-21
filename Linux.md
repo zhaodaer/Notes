@@ -9,7 +9,12 @@
 >   * requests使用多IP请求
 >   * [Python多线程模板](code/MultiThread_Template.py)
 
+&nbsp; 
+
+&nbsp; 
+
 ### 🥉学习方法
+
 * 你现在已经有了一些Linux的基础了，应该系统学一下了
 * 先把韦东山嵌入式Linux完整看一遍(不要全看，挑着看  
 * 看经典书籍（鸟哥的Linux私房菜很不错）
@@ -23,14 +28,25 @@
 
 3、FileZilla连接不上Ubuntu
 
+&nbsp; 
+
+&nbsp; 
+
 
 #### 第一节
 * 绝对路径用 \   相对路径用 /
+
 * Shell命令  PATH环境变量设置
+
 * ./ 表示当前目录下行命令  
+
 * 在Linux系统中，每个设备都被当成一个文件来对待，例如SATA接口的硬盘文件名为 /dev/sd[a-d]  
+
 * 绝对路径进入 cd /home/alien  
+
 * 相对路径进入 cd ./XXX/  
+
+  &nbsp; 
 
 
 ### 📉基础命令
@@ -62,7 +78,10 @@
 | tar     | 压缩             | tar czf abc def            | 创建压缩包 用gzip命令压缩 将def文件压缩为名为abc的压缩包（也可以压缩目录） |
 |         | 解压             | tar xzf abc -C aaa         | 将压缩包abc解压到aaa目录里去 用gzip解压                      |
 
+### &nbsp; 
+
 ### 📉vi命令
+
 ![image](https://github.com/zhaodaer/Notes/assets/141413040/0ef785b2-29ad-425a-b9b7-d1534f6e392d)
 保存退出        :wq  
 不保存退出       :q!  
@@ -101,15 +120,31 @@ p:粘贴(p :paste)
 利用ping www.baidu.com 测试
 不行的话 打开服务，把关于VMware的所有服务都启动
 
-
-
 #### 用Source insight 来阅读源码(要破解，有点麻烦，我选择VScode)
 
-
-
-
-
-
-
 #### Mount命令录制宏
+
+&nbsp; 
+
+&nbsp; 
+
+&nbsp; 
+
+### 📉gcc编译器
+
+### 📉Shell脚本
+
+### 📉Makefile
+
+### 📉文件IO
+
+### 📉多线程编程
+
+### 📉网络编程
+
+### 📉I2C应用编程
+
+### 📉驱动内核
+
+
 
