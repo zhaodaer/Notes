@@ -28,9 +28,21 @@
 
 3、FileZilla连接不上Ubuntu
 
-&nbsp; 
+解决方法：
 
-&nbsp; 
+#### 1、打开本机服务，开启相关的服务。
+
+![image-20230922230558170](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230922230558170.png)
+
+#### &nbsp; 2、重置虚拟网络编辑器
+
+&nbsp;&nbsp;打开虚拟网络编辑器—>还原默认设置
+
+![image-20230922230646609](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230922230646609.png)
+
+&nbsp;&nbsp;还原默认设置之后，就看见有了虚拟机的网卡了
+
+![image-20230922230837506](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230922230837506.png)
 
 
 #### 第一节
