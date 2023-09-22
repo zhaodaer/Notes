@@ -132,6 +132,40 @@ p:粘贴(p :paste)
 
 ### 📉gcc编译器
 
+#### 编译过程：
+
+![image-20230922115433188](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230922115433188.png)
+
+#### 编译多个文件
+
+一起编译、链接：
+gcc -o test main.c sub.c
+
+&nbsp; 
+
+分开编译，统一链接：
+
+gcc -c -o main.o main.c
+gcc -c -o sub.o sub.c
+gcc -o test main.o sub.o
+
+#### 制作和使用动态库、静态库
+
+#### 一些很有用的选项
+
+![image-20230922122713220](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230922122713220.png)
+
+gcc -E main.c // 查看预处理结果，比如头文件是哪个
+gcc -E -dM main.c > 1.txt // 把所有的宏展开，存在 1.txt 里
+gcc -Wp,-MD,abc.dep -c -o main.o main.c // 生成依赖文件 abc.dep ，后面 Makefile 会用
+echo 'main(){}'| gcc -E -v - // 它会列出头文件目录、库目录(LIBRARY_PATH)
+
+&nbsp; 
+
+&nbsp; 
+
+&nbsp; 
+
 ### 📉Shell脚本
 
 ### 📉Makefile
