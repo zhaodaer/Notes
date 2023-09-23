@@ -289,7 +289,7 @@ c += 123
 
 **4、Makefile函数**：
 
-程序：
+**程序：**
 
 ```c
 A = a b c
@@ -312,7 +312,7 @@ all :
     @dep_files = $ (dep_files)
 ```
 
-输出：
+**输出：**
 
 ```c
 B = a.o b.o c.o

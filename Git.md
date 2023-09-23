@@ -16,16 +16,16 @@
 
 
 
+**复制一下代码，推送到远程仓库：**
 
-
+```c
 git init
-
 git add . 
-
 git commit -m “第二次修改” 
-
 git remote add origin git@github.com:zhaodaer/Notes.git
-
 git pull origin main
-
 git push -u origin main
+```
+
+
+
