@@ -13,3 +13,19 @@
 若出现error: remote origin already exists.
 
 则git remote rm origin 删除关联的origin的远程库
+
+
+
+
+
+git init
+
+git add . 
+
+git commit -m “第二次修改” 
+
+git remote add origin git@github.com:zhaodaer/Notes.git
+
+git pull origin main
+
+git push -u origin main

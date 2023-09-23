@@ -32,17 +32,17 @@
 
 #### 1、打开本机服务，开启相关的服务。
 
-![image-20230922230558170](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230922230558170.png)
+![image-20230922230558170](C:\Users\东瑞\Desktop\222\Notes\images\image-20230922230558170.png)
 
 #### &nbsp; 2、重置虚拟网络编辑器
 
 &nbsp;&nbsp;打开虚拟网络编辑器—>还原默认设置
 
-![image-20230922230646609](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230922230646609.png)
+![image-20230922230646609](C:\Users\东瑞\Desktop\222\Notes\images\image-20230922230646609.png)
 
 &nbsp;&nbsp;还原默认设置之后，就看见有了虚拟机的网卡了
 
-![image-20230922230837506](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230922230837506.png)
+![image-20230922230837506](C:\Users\东瑞\Desktop\222\Notes\images\image-20230922230837506.png)
 
 
 #### 第一节
@@ -95,42 +95,42 @@
 ### 📉vi命令
 
 ![image](https://github.com/zhaodaer/Notes/assets/141413040/0ef785b2-29ad-425a-b9b7-d1534f6e392d)
-保存退出        :wq  
-不保存退出       :q!  
-:set number   显示行号  
-:set nonumber   不显示行号  
-:256  跳到第256行  
-ctrl+f  向前翻页  
-ctrl+b  向后翻页  
-G:跳到文件结尾  
-0:跳到行首  
-$:跳到行尾  
+&emsp;保存退出        :wq  
+&emsp;不保存退出       :q!  
+&emsp;:set number   显示行号  
+&emsp;:set nonumber   不显示行号  
+&emsp;:256  跳到第256行  
+&emsp;ctrl+f  向前翻页  
+&emsp;ctrl+b  向后翻页  
+&emsp;G:跳到文件结尾  
+&emsp;0:跳到行首  
+&emsp;$:跳到行尾  
 
 #### 编辑  
-插入:输入i进入编辑模式  
-删除:  
-x:删除-一个字母  
-dw: del word  
-D:删除光标之后的内容  
-dd:删除整行  
-ndd //删除当前行及其后的n-1行(n是数字)  
-o:在当前行下面新增加--行  
-u:撤销上一-步操作  
+&emsp;插入:输入i进入编辑模式  
+&emsp;删除:  
+&emsp;x:删除-一个字母  
+&emsp;dw: del word  
+&emsp;D:删除光标之后的内容  
+&emsp;dd:删除整行  
+&emsp;ndd //删除当前行及其后的n-1行(n是数字)  
+&emsp;o:在当前行下面新增加--行  
+&emsp;u:撤销上一-步操作  
 
 #### 复制/粘贴  
-yy:复制当前行(y:yank(复制))   
-nyy:复制当前行及其后的n-1 行(n是数字)  
-p:粘贴(p :paste)  
+&emsp;yy:复制当前行(y:yank(复制))   
+&emsp;nyy:复制当前行及其后的n-1 行(n是数字)  
+&emsp;p:粘贴(p :paste)  
 
 #### 查找/替换  
-/pattern: 从光标开始处向文件尾搜索pattern, 后按下n(向下查找)或N(向上查找)  
-:8s/p1/p2/g :将文件中所有的p1均用p2替换  
-:8s/p1/p2/gc :替换时需要确认  
+&emsp;/pattern: 从光标开始处向文件尾搜索pattern, 后按下n(向下查找)或N(向上查找)  
+&emsp;:8s/p1/p2/g :将文件中所有的p1均用p2替换  
+&emsp;:8s/p1/p2/gc :替换时需要确认  
 
 
 #### 测试NAT网卡能不能用：
-利用ping www.baidu.com 测试
-不行的话 打开服务，把关于VMware的所有服务都启动
+&emsp;利用ping www.baidu.com 测试
+&emsp;不行的话 打开服务，把关于VMware的所有服务都启动
 
 #### 用Source insight 来阅读源码(要破解，有点麻烦，我选择VScode)
 
@@ -146,31 +146,36 @@ p:粘贴(p :paste)
 
 #### 编译过程：
 
-![image-20230922115433188](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230922115433188.png)
+![image-20230922115433188](C:\Users\东瑞\Desktop\222\Notes\images\image-20230922115433188.png)
 
 #### 编译多个文件
 
 一起编译、链接：
-gcc -o test main.c sub.c
 
-&nbsp; 
+```c
+gcc -o test a.c b.c
+```
 
 分开编译，统一链接：
 
-gcc -c -o main.o main.c
-gcc -c -o sub.o sub.c
-gcc -o test main.o sub.o
+```c
+gcc -c -o a.o a.c
+gcc -c -o b.o b.c
+gcc -o test a.o b.o
+```
+
+
 
 #### 制作和使用动态库、静态库
 
 #### 一些很有用的选项
 
-![image-20230922122713220](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230922122713220.png)
+![image-20230922122713220](C:\Users\东瑞\Desktop\222\Notes\images\image-20230922122713220.png)
 
-gcc -E main.c // 查看预处理结果，比如头文件是哪个
-gcc -E -dM main.c > 1.txt // 把所有的宏展开，存在 1.txt 里
-gcc -Wp,-MD,abc.dep -c -o main.o main.c // 生成依赖文件 abc.dep ，后面 Makefile 会用
-echo 'main(){}'| gcc -E -v - // 它会列出头文件目录、库目录(LIBRARY_PATH)
+&emsp;gcc -E main.c // 查看预处理结果，比如头文件是哪个
+&emsp;gcc -E -dM main.c > 1.txt // 把所有的宏展开，存在 1.txt 里
+&emsp;gcc -Wp,-MD,abc.dep -c -o main.o main.c // 生成依赖文件 abc.dep ，后面 Makefile 会用
+&emsp;echo 'main(){}'| gcc -E -v - // 它会列出头文件目录、库目录(LIBRARY_PATH)
 
 &nbsp; 
 
@@ -180,7 +185,171 @@ echo 'main(){}'| gcc -E -v - // 它会列出头文件目录、库目录(LIBRARY_
 
 ### 📉Shell脚本
 
+
+
+
+
+
+
 ### 📉Makefile
+
+1、最简单的：
+
+```c
+gcc -o test a.c b.c
+```
+
+查看编译的详细信息：
+
+```c
+gcc -o test a.c b.c -v
+```
+
+<font color=red>缺点</font>：修改一个文件再编译，会对所有的文件重新编译
+
+2、Makefile核心---规则：
+
+&emsp;&emsp;目标文件：依赖文件1  依赖文件2
+&emsp;&emsp;`[TAB]` 命令
+
+&emsp;&emsp;当"目标文件"不存在，或某个依赖文件比目标文件"新" ，则:
+&emsp;&emsp;执行"命令"规则：
+
+```c
+test : a.o b.o
+	gcc -o test a.o b.o
+a.o : a.c
+	gcc -c -o a.o a.c
+b.o : b.c
+	gcc -c -o b.o b.c
+```
+
+
+
+#### 语法：
+
+**1、通配符**（若有很多文件，则使用）：
+
+$@：表示目标
+
+$<：表示第1个依赖文件
+
+$^：表示所有依赖文件
+
+```c
+test : a.o b.o c.o
+	gcc -o test $^
+%.o : %.c
+	gcc -c -o $@ $<
+```
+
+
+
+**2、假想目标（.PHONY）**：
+
+```c
+test : a.o b.o c.o
+	gcc -o test $^
+%.o : %.c
+	gcc -c -o $@ $<
+
+clean :
+	rm *.o test
+.PHONY : clean
+```
+
+
+
+**3、即时变量、延时变量**：
+
+:=     即使变量，即刻确定，在定义时就确定了
+
+=      延时变量，使用时才确定它的值
+
+?=     延时变量，只有1次定义值才起效
+
++=     附加，是即时变量还是延时变量取决于前面的定义
+
+```c
+a := $(c)
+b = $(c)
+c = abc
+d = 100
+d ?= 2000
+
+all :
+   @echo a = $(a)
+   @echo b = $(b)
+   @echo c = $(d)
+
+c += 123
+```
+
+
+
+**4、Makefile函数**：
+
+程序：
+
+```c
+A = a b c
+B = $ (foreach f, $(A)，$(f).o)	//将A中的所有文件加上.o
+
+C = a b c d/
+D = $ (filter  %/, $(C) )	//找出在C中所有符合%/的文件
+E = $ (filter-out  %/, $ (C) )	//找出在C中所有不符合%/的文件
+
+files = a.c b.c c.c d.c e.c abc
+files2 = $ (wildcard  $ (files) )	//取出files中处在的文件
+dep_files = $ (patsubst %.c, %.d, $(files) )
+    		//从files2中取出所有文件，找出符合.c的文件，然后全部替换成.d文件
+    
+all :
+	@echo B = $ (B)
+	@echo D = $ (D)
+	@echo E = $ (E)
+	@echo files2 = $ (files2)
+    @dep_files = $ (dep_files)
+```
+
+输出：
+
+```c
+B = a.o b.o c.o
+D = d/
+E = a b c
+files2 = a.c b.c c.c
+dep_files = a.d b.d c.d d.d e.d abc
+```
+
+
+
+
+
+
+
+
+
+
+**结果**：a = 无
+
+&emsp;&emsp;&emsp;b = abc 123
+
+&emsp;&emsp;&emsp;c= 100 
+
+**命令格式**：`make [目标]`
+
+&emsp;单独使用make命令，只执行第一个test命令，不会执行其他的。但使用make clean时只执行clean命令
+
+
+
+
+
+
+
+
+
+
 
 ### 📉文件IO
 
