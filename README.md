@@ -22,7 +22,7 @@
 |          | [FPGA](Java/mianjing/README.md)                              | DreamCats  |
 |          | 电路板调试、电子元器件焊接技术                               |            |
 | 上层应用 | C++、Qt、JAVA、Python                                        |            |
-| 操作系统 | [Linux](Java/classify/README.md)                             |            |
+| 操作系统 | [Linux](README.md)                             |            |
 | 底层驱动 | C语言，ARM架构汇编，Linux内核架构                            |            |
 |          | Uboot裁剪移植，Linux内核裁剪移植，文件系统                   |            |
 | 算法     | [数据结构](http://www.cyc2018.xyz/)                          | cyc        |
