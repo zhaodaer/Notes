@@ -149,7 +149,7 @@
 
 ---
 
-![image-20230928214416324](https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214416324.png)
+<img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214416324.png" width="500"/>
 &emsp;保存退出        :wq  
 &emsp;不保存退出       :q!  
 &emsp;:set number   显示行号  
@@ -160,6 +160,8 @@
 &emsp;G:跳到文件结尾  
 &emsp;0:跳到行首  
 &emsp;$:跳到行尾  
+
+
 
 **编辑**  
 
@@ -204,7 +206,7 @@
 
 #### 1、编译过程
 
-![image-20230922115433188](C:\Users\东瑞\Desktop\222\Notes\images\image-20230922115433188.png)
+![image-20230928214648625](https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214648625.png)
 
 **编译多个文件**
 
@@ -228,7 +230,7 @@ gcc -o test a.o b.o
 
 #### **3、一些很有用的选项**
 
-![image-20230922122713220](C:\Users\东瑞\Desktop\222\Notes\images\image-20230922122713220.png)
+![image-20230928214654604](https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214654604.png)
 
 &emsp;gcc -E main.c // 查看预处理结果，比如头文件是哪个
 &emsp;gcc -E -dM main.c > 1.txt // 把所有的宏展开，存在 1.txt 里
@@ -449,7 +451,7 @@ $(findstring a, b c)
 
 [链接](E:\learn\weidongshan_Linux\01_all_series_quickstart\04_嵌入式Linux应用开发基础知识\doc_pic\01.嵌入式Linux应用开发基础知识.docx)
 
-![image-20230925204013516](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230925204013516.png)
+<img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214706385.png" width="500"/>
 
 
 
@@ -469,9 +471,9 @@ $(findstring a, b c)
 
 ​		系统IO是直接进入内核，标准IO是在系统IO上又封装了一层函数，它多了一个用户Butter，不用每次执行函数时都进入内核，而是进入用户Butter，提高了效率
 
-![image-20230925213741519](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230925213741519.png)
+<img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214713139.png" width="500"/>
 
-![image-20230925214002205](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230925214002205.png)
+<img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214720906.png" width="500"/>
 
 把SD卡插到开发板上，挂载它的分区，然后去访问对应的目录就可以了
 
@@ -494,7 +496,7 @@ $(findstring a, b c)
 
 #### 3、系统调用函数怎么进入内核？
 
- ![image-20230925210458236](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230925210458236.png)
+ ![image-20230928214728331](https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214728331.png)
 
 1、用户空间，通过各种函数去调用内核空间，
 
@@ -508,9 +510,9 @@ $(findstring a, b c)
 
 #### 4、**每个进程有自己的文件句柄空间**
 
-![image-20230928165754778](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230928165754778.png)
+![image-20230928214743470](https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214743470.png)
 
-![image-20230928165633331](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230928165633331.png)
+![image-20230928214753679](https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214753679.png)
 
 
 
@@ -520,7 +522,7 @@ $(findstring a, b c)
 
 ​		当使用某些函数时，如果不知道包含哪些头文件时，可以用man手册，比如``man open``，如果找不到则``man 2 open``		
 
-![image-20230925214606340](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230925214606340.png)
+<img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214801457.png" width="500"/>
 
 
 
@@ -548,13 +550,13 @@ $(findstring a, b c)
 
 可以自定义创建的文件属性，但有的权限不能改，是因为umask的权限保护
 
-![image-20230926172236108](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230926172236108.png)
+<img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214807351.png" width="500"/>
 
 
 
 **write函数**：
 
-![image-20230926174821293](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230926174821293.png)
+<img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214815188.png" width="500"/>
 
 
 
@@ -562,7 +564,7 @@ $(findstring a, b c)
 
 **read函数**：
 
-![image-20230926180821902](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230926180821902.png)
+<img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214821495.png" width="500"/>
 
 #### 7、零星知识点
 
@@ -578,7 +580,7 @@ $(findstring a, b c)
 
 #### 1、文件从哪里来
 
-![image-20230925210123776](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230925210123776.png)
+![image-20230928214830522](https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214830522.png)
 
 
 
@@ -590,7 +592,7 @@ $(findstring a, b c)
 
 #### 2、内核的sys_open、sys_read会做什么？
 
- ![image-20230925210505897](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230925210505897.png)
+ <img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214837019.png" width="500"/>
 
 
 
