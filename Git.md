@@ -1,4 +1,22 @@
-#### 使用Git工具将本地代码推送到GitHub远程仓库的具体步骤如下：
+**复制一下代码，即可推送到远程仓库：**
+
+```c
+git remote rm origin
+git init
+git add . 
+git commit -m “第N次修改” 
+git remote add origin git@github.com:zhaodaer/Notes.git
+git pull origin main
+git push -u origin main
+```
+
+
+
+
+
+
+
+#### 1、使用Git工具将本地代码推送到GitHub远程仓库的具体步骤如下：
 
 1. 在本地项目文件夹打开Git Bash
 2. git init             初始化git仓库
@@ -16,17 +34,5 @@
 
 
 
-**复制一下代码，推送到远程仓库：**
-
-```c
-git remote rm origin
-git init
-git add . 
-git commit -m “第N次修改” 
-git remote add origin git@github.com:zhaodaer/Notes.git
-git pull origin main
-git push -u origin main
-```
-
-
+#### 2、[使用Github+picGo搭建图床]([使用Github+picGo搭建图床，保姆级教程来了 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/489236769))
 
