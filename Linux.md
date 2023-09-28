@@ -206,7 +206,7 @@
 
 #### 1、编译过程
 
-![image-20230928214648625](https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214648625.png)
+<img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214648625.png" width="500"/>
 
 **编译多个文件**
 
@@ -230,7 +230,7 @@ gcc -o test a.o b.o
 
 #### **3、一些很有用的选项**
 
-![image-20230928214654604](https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214654604.png)
+<img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214654604.png" width="500"/>
 
 &emsp;gcc -E main.c // 查看预处理结果，比如头文件是哪个
 &emsp;gcc -E -dM main.c > 1.txt // 把所有的宏展开，存在 1.txt 里
@@ -510,9 +510,9 @@ $(findstring a, b c)
 
 #### 4、**每个进程有自己的文件句柄空间**
 
-![image-20230928214743470](https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214743470.png)
+<img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214743470.png" width="500"/>
 
-![image-20230928214753679](https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214753679.png)
+<img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214753679.png" width="500"/>
 
 
 
@@ -580,7 +580,7 @@ $(findstring a, b c)
 
 #### 1、文件从哪里来
 
-![image-20230928214830522](https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214830522.png)
+<img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214830522.png" width="500"/>
 
 
 
