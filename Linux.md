@@ -1,4 +1,13 @@
-[TOC]
+### 目录
+> * [环境配置](https://py3.io/doc/python/quickstart.html)
+> * 基础命令
+> * vi文本编辑器
+> * Shell与Shell脚本
+> * 软件管理
+> * 网络基础
+>   * XXX
+>   * requests使用多IP请求
+>   * [Python多线程模板](code/MultiThread_Template.py)
 
 &nbsp; 
 
@@ -36,25 +45,21 @@
 
 **打开本机服务，开启相关的服务**
 
-![image-20230922230558170](C:\Users\东瑞\Desktop\222\Notes\images\image-20230922230558170.png)
+<img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214018290.png" width="500"/>
 
 &nbsp; **重置虚拟网络编辑器**
 
 &nbsp;&nbsp;打开虚拟网络编辑器—>还原默认设置
 
-<img src="C:\Users\东瑞\Desktop\222\Notes\images\image-20230922230646609.png" width="500"/>
+<img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214034861.png" width="500"/>
 
 
 
 &nbsp;&nbsp;**还原默认设置之后，就看见有了虚拟机的网卡了**
 
-<img src="C:\Users\东瑞\Desktop\222\Notes\images\image-20230922230837506.png" width="500"/>
+<img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214236693.png" width="500"/>
 
 ---
-
-
-
-### &emsp; 
 
 ### START
 
@@ -108,9 +113,7 @@
 |         |                                          |                            |                                                              |
 |         |                                          |                            |                                                              |
 
-#### &nbsp;  
-
-#### 快捷键
+#### &nbsp; 快捷键
 
 ---
 
@@ -146,7 +149,7 @@
 
 ---
 
-![image](https://github.com/zhaodaer/Notes/assets/141413040/0ef785b2-29ad-425a-b9b7-d1534f6e392d)
+![image-20230928214416324](https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214416324.png)
 &emsp;保存退出        :wq  
 &emsp;不保存退出       :q!  
 &emsp;:set number   显示行号  
