@@ -594,11 +594,27 @@ $(findstring a, b c)
 
  <img src="https://raw.githubusercontent.com/zhaodaer/PicX/main/img/image-20230928214837019.png" width="500"/>
 
+#### 3、Framebuffer的应用编程（LCD显示）
+
+![image-20230929194253081](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230929194253081.png)
+
+#### 4、交叉编译程序
+
+![image-20230929211817565](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230929211817565.png)
+
+### 📉文字及图像显示
+
+![image-20230929201835850](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230929201835850.png)
+
 
 
 ### 📉多线程编程
 
 ### 📉网络编程
+
+#### 1、网络编程的基本概念
+
+![image-20230929215054299](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20230929215054299.png)
 
 ### 📉I2C应用编程
 

@@ -12,6 +12,16 @@ git push -u origin main
 
 
 
+```c
+git remote rm origin
+git init
+git add .
+git commit -m “第N次修改”
+git remote add origin git@github.com:zhaodaer/Stories.git
+git pull origin main
+git push -u origin main
+```
+
 
 
 
