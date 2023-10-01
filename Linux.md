@@ -610,6 +610,303 @@ $(findstring a, b c)
 
 ### 📉多线程编程
 
+---
+
+​		**进程**可以看作是一家餐厅，而线程则是餐厅里的服务员。这家餐厅（进程）有自己的地址和空间，储存了所有的食物（数据）。每当有客人（新的进程）来餐厅吃饭时，餐厅（操作系统）就会为客人分配一个新的餐桌（内存空间），并且为客人准备食物（分配资源）。
+
+​		服务员（线程）则在餐厅（进程）内部工作，他们共享餐厅的资源，比如食物（数据）和餐具（内存）。每个服务员都可以在自己的工作区域内为客人服务，并且可以使用餐厅内的公共区域，比如厨房（共享内存）。但是，如果有一个服务员正在使用厨房（访问共享内存），其他服务员就需要等待他使用完毕后才能使用。
+
+​		这样，餐厅（进程）可以同时接待多个客人（运行多个线程），而每个客人都有自己的服务员（线程）为他们服务。服务员之间通过共享餐厅的资源来协同工作，完成客人的要求。
+
+​		如果一个程序拥有**多线程**能力，意味着它能够在同一时间执行多个线程，进而提升整体处理性能。这就像餐厅里有很多服务员，他们可以同时为多个客人服务，从而提高了餐厅的工作效率。
+
+---
+
+#### 1、线程的使用流程		
+
+​		首先需要创建线程，一旦线程创建完成后，线程与线程之间会发生竞争执行，抢占时间片来执行线程逻辑。在创建线程时候，可以通过创建线程的第四个参数传入参数，在线程退出时亦可传出参数被线程回收函数所回收，获取到传出的参数
+
+<img src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001211323802.png" alt="image-20231001211323802" style="zoom:33%;" />
+
+**1）获取线程号**
+
+```c
+#include <pthread.h>
+pthread_t pthread_self(void);
+```
+
+
+通过函数 pthread_self，来返回当前线程的线程号
+
+
+
+**2）线程的创建函数**
+
+```c
+#include <pthread.h>
+int pthread_create(pthread_t *thread, const pthread_attr_t *attr,void *(*start_routi
+ne) (void *), void *arg);
+```
+
+⚫ 第一个参数为 pthread_t 指针，用来保存新建线程的线程号；
+⚫ 第二个参数表示了线程的属性，一般传入 NULL 表示默认属性；
+⚫ 第三个参数是一个函数指针，就是线程执行的函数。这个函数返回值为 void\*，形参为 void*
+⚫ 第四个参数则表示为向线程处理函数传入的参数，若不传入，可用 NULL 填充，
+
+
+
+**程序分析：**
+
+```c
+#include <pthread.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <errno.h>
+
+void *fun(void *arg)	//这是一个线程函数，它接受一个void指针作为参数，并返回一个void指针。
+{
+	// 打印出当前线程的tid 号
+    printf("pthread_New = %lu\n",(unsigned long)pthread_self());
+}
+
+int main()
+{
+    //定义一个pthread_t类型的变量tid1
+	pthread_t tid1;	
+	int ret = pthread_create(&tid1,NULL,fun,NULL);	//创建线程
+	if(ret != 0)
+	{
+		perror("pthread_create");
+		return -1;
+	}
+     //在主线程中打印主线程的ID和新创建的线程的ID。
+	printf("tid_main = %lu tid_new = %lu \n",(unsigned long)pthread_self(),(unsigned long)tid1);
+   //使主线程睡眠1秒。这是为了确保新创建的线程有时间运行并打印其ID。如果没有这个sleep语句，主线程可能在新线程开始运行之前就已经结束，导致你看不到新线程的输出。
+	sleep(1);
+    return 0;
+}
+```
+
+
+
+**3）向线程传入参数**
+
+
+
+**4）线程的退出与回收**
+
+**线程主动退出**
+
+```c
+#include <pthread.h>
+void pthread_exit(void *retval);
+
+```
+
+在退出时候可以传递一个 void*类型的数据带给主线程，若选择不传出数据，可将参数填充为NULL
+
+
+
+**线程被动退出**
+其他线程使用该函数让另一个线程退出
+
+```c
+#include <pthread.h>
+int pthread_cancel(pthread_t thread);
+```
+
+该函数传入一个 tid 号，会强制退出该 tid 所指向的线程，若成功执行会返回 0
+
+
+
+**线程资源回收( 阻塞方式)**
+
+```c
+#include <pthread.h>
+int pthread_join(pthread_t thread, void **retval);
+```
+
+默认状态为阻塞状态，直到成功回收线程后才返回。第一个参数为要回收线程的 tid 号，第二个参数为线程回收后接受线程传出的数据
+
+
+
+**线程资源回收( 非阻塞方式)**
+
+```c
+#define _GNU_SOURCE
+#include <pthread.h>
+int pthread_tryjoin_np(pthread_t thread, void **retval);
+```
+
+
+通过返回值判断是否回收掉线程，成功回收则返回 0，其余参数与 pthread_join 一致。
+
+
+
+
+
+#### 2、互斥锁
+
+​		当线程在运行过程中，去操作公共资源，如全局变量的时候，可能会发生彼此“矛盾”现象。例如线程 1 企图想让变量自增，而线程 2 企图想要变量自减，两个线程互相竞争，变量似乎永远在某个范围内浮动，无法到达期望数值
+
+​		多个线程都要访问某个临界资源，比如某个全局变量时，需要互斥地访问：我访问时，你不能访问。这就用到了互斥锁
+
+<img src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001211515488.png" alt="image-20231001211515488" style="zoom: 50%;" />
+
+
+
+**1）初始化互斥量**
+
+```c
+int pthread_mutex_init(phtread_mutex_t *mutex,
+const pthread_mutexattr_t *restrict attr);
+```
+
+该函数初始化一个互斥量，第一个参数是改互斥量指针，第二个参数为控制互斥量的属性，一般为 NULL。当函数成功后会返回 0，代表初始化互斥量成功。
+当然初始化互斥量也可以调用宏来快速初始化，代码如下：
+
+```c
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITALIZER;
+```
+
+
+**2）互斥量加锁（阻塞）/ 解锁**
+
+```c
+#include <pthread.h>
+int pthread_mutex_lock(pthread_mutex_t *mutex);
+int pthread_mutex_unlock(pthread_mutex_t *mutex);
+```
+
+只需要传入已经初始化好的pthread_mutex_t 互斥量指针。成功后会返回 0。
+当某一个线程获得了执行权后，执行 lock 函数，一旦加锁成功后，其余线程遇到 lock 函数时候会发生阻塞，直至获取资源的线程执行 unlock 函数后。unlock 函数会唤醒其他正在等待互斥量的线程。
+
+
+
+**3）互斥量加锁（非阻塞）**
+
+```c
+#include <pthread.h>
+int pthread_mutex_trylock(pthread_mutex_t *mutex);
+```
+
+
+该函数同样也是一个线程加锁函数，但该函数是非阻塞模式通过返回值来判断是否加锁成功，用法与上述阻塞加锁函数一致。
+
+
+
+**4）互斥量销毁**
+
+```c
+#include <pthread.h>
+int pthread_mutex_destory(pthread_mutex_t *mutex);
+```
+
+
+该函数是用于销毁互斥量的，传入互斥量的指针，就可以完成互斥量的销毁，成功返回 0
+
+
+
+#### 3、信号量（多个线程执行顺序控制）
+
+​		解决了临界资源的访问，因线程都是无序执行，我们似乎对线程的执行顺序无法得到控制，于是便引入了信号量的概念，解决线程执行顺序，就用到了信号量。信号量起通知作用，线程 A 在等待某件事，线程 B 完成了这件事后就可以给线程 A 发信号。
+
+​		当多个线程出现后，同时会遇到无序执行的问题。有时候需要对线程的执行顺序做出限定，变引入了信号量，通过 PV 操作来控制线程的执行顺序。
+
+<img src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001211805874.png" alt="image-20231001211805874" style="zoom:33%;" />
+
+
+
+**1）初始化信号量**
+
+```c
+int sem_init(sem_t *sem,int pshared,unsigned int value);
+```
+
+⚫ 该函数可以初始化一个信号量，第一个参数传入 sem_t 类型指针；
+⚫ 第二个参数传入 0 代表线程控制，否则为进程控制；
+⚫ 第三个参数表示信号量的初始值，0 代表阻塞，1 代表运行。
+⚫ 待初始化结束信号量后，若执行成功会返回 0。
+
+
+
+**2）信号量 P/V 操作**
+
+```c
+#include <pthread.h>
+int sem_wait(sem_t *sem);
+int sem_post(sem_t *sem);
+```
+
+⚫ sem_wait 函数作用为检测指定信号量是否有资源可用，若无资源可用会阻塞等待，若有资源可用会自动的执行“sem-1”的操作。所谓的“sem-1”是与上述初始化函数中第三个参数值一致，成功执行会返回 0。
+⚫ sem_post 函数会释放指定信号量的资源，执行“sem+1”操作。通过以上 2 个函数可以完成所谓的 PV 操作，即信号量的申请与释放，完成对线程执行顺序的控制
+
+
+
+**3）信号量申请( 非阻塞方式)**
+
+```c
+#include <pthread.h>
+int sem_trywait(sem_t *sem);
+```
+
+功能与 sem_wait 一致，唯一区别在于此函数为非阻塞
+
+
+
+**4）信号量销毁**
+
+```c
+#include <pthread.h>
+int sem_destory(sem_t *sem);
+```
+
+执行过后可将信号量进行销毁
+
+
+
+**5）举例**
+
+​		初始化sem1有资源，sem2、sem3阻塞，  只有14行fun1执行了``sem_post(&sem2)``，才会释放sem2，才会使20行fun2中``sem_wait(&sem2)``执行
+
+
+
+<img src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001210510145.png" alt="image-20231001210510145" style="zoom: 33%;" />
+
+
+
+
+
+---
+
+v
+
+
+
+查看进程和线程
+
+<img src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001115718512.png" alt="image-20231001115718512" style="zoom:50%;" />
+
+杀死之前的进程：
+
+<img src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001120049488.png" alt="image-20231001120049488" style="zoom:50%;" />
+
+
+
+将其进行后台执行
+
+<img src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001120120522.png" alt="image-20231001120120522" style="zoom: 80%;" />
+
+
+
+
+
+使用top命令
+
+<img src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231001120522186.png" alt="image-20231001120522186" style="zoom:50%;" />
+
+
+
 ### 📉网络编程
 
 #### 1、网络编程的基本概念
