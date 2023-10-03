@@ -1019,7 +1019,93 @@ Hardware Development Manual
 ⚫ addrlen 常常被赋值为 sizeof （struct sockaddr）。
 ⚫ sendto 函数也返回实际发送的数据字节长度或在出现发送错误时返回-1。
 
+### 
+
+### 📉串口编程
+
+<img src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231003202727570.png" alt="image-20231003202727570" style="zoom:30%;" />
+
+<img src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231003202752177.png" alt="image-20231003202752177" style="zoom:33%;" />
+
+<img src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231003202813748.png" alt="image-20231003202813748" style="zoom:33%;" />
+
+#### 1、TTY体系中设备节点的差别
+
+**傻傻分不清**
+/dev/ttyS0、/devttySAC0、 /dev/tty. /dev/tty0、 /dev/ty1、 /dev/console
+
+它们有什么差别?
+
+
+
+TTY/Terminal/Console/UART
+
+它们有什么差别?
+
+
+
+
+
+
+
+**/dev/ttyN(N=1,2,3...)**
+
+Ctrl+Alt+FN(N=1,2,3...)，可分别打开不同终端
+
+其中tty0表示串口，tty1、2、3表示不同虚拟终端
+
+/dev/ty3、/dev/tty4: 表示某个程序使用的虚拟终端
+//在tty3、 tty4终端来回切换，执行命令
+
+```c
+echo he1lo > /dev/tty3
+echo hi    > /dev/tty4
+```
+
+
+
+**Terminal和Console的差别**
+
+Terminal含有远端的意思，中文为:终端。Console翻译为控制台， 可以理解为权限更大、能查看更多信息。
+比如我们可以在Console.上看到内核的打印信息，从这个角度上看:
+Console是某一个Terminal
+●Terminal并不都是Console。
+●我们可以从多个Terminal中选择某一个作为Console
+●很多时候，两个概念混用，并无明确的、官方的定义
+
+
+
+**/dev/console**
+
+选哪个?内核的打印信息从哪个设备上显示出来?
+可以通过内核的cmdline来指定,
+比如: console=ttyS0 console=tty
+我不想去分辨这个设备是串口还是虚拟终端，
+有没有办法得到这个设备?
+有!通过/dev/console!
+console=ttyS0时: /dev/console就是ttyS0
+console=tty时: /dev/console就是前台程序的虚拟终端
+console=tty0时: /dev/console就是前台程序的虚拟终端
+console=ttyN时: /dev/console就是/dev/ttyN
+console有多个取值时，使用最后- -个取值来判断
+
+
+
+#### 2、TTY驱动程序框架
+
+行规程的引入
+
+#### 
+
+
+
+
+
 ### 📉I2C应用编程
+
+
+
+
 
 ### 📉驱动内核
 
