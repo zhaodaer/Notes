@@ -26,6 +26,8 @@
 <p style="font-family:arial;color:red;font-size:20px;">A paragraph.</p>
 段落字体为arial，颜色红，字号20px
 
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+边框颜色
 
 <body style="background-color:yellow">
 body背景颜色为黄
@@ -290,4 +292,138 @@ h1, h2, p {
 ```
 
 
+
+
+
+
+
+## 三种使用 CSS 的方法
+
+有三种插入样式表的方法：
+
+- 外部 CSS
+
+  通过使用外部样式表，您只需修改一个文件即可改变整个网站的外观！
+
+  每张 HTML 页面必须在 head 部分的 <link> 元素内包含对外部样式表文件的引用。
+
+- 内部 CSS
+
+  如果一张 HTML 页面拥有唯一的样式，那么可以使用内部样式表。
+
+  内部样式是在 head 部分的 <style> 元素中进行定义。
+
+- 行内 CSS
+
+  行内样式（也称内联样式）可用于为单个元素应用唯一的样式。
+
+  如需使用行内样式，请将 style 属性添加到相关元素。style 属性可包含任何 CSS 属性。
+
+
+
+**注意：**
+
+当为某个 HTML 元素指定了多个样式时，会使用哪种样式呢？
+
+页面中的所有样式将按照以下规则“层叠”为新的“虚拟”样式表，其中第一优先级最高：
+
+1. 行内样式（在 HTML 元素中）
+2. 外部和内部样式表（在 head 部分）
+3. 浏览器默认样式
+
+因此，行内样式具有最高优先级，并且将覆盖外部和内部样式以及浏览器默认样式。
+
+
+
+
+
+
+
+
+
+
+
+
+
+## CSS background - 简写属性
+
+使用简写属性在一条声明中设置背景属性：
+
+```
+body {
+  background: #ffffff url("tree.png") no-repeat right top;
+}
+```
+
+在使用简写属性时，属性值的顺序为：
+
+- background-color
+- background-image
+- background-repeat
+- background-attachment
+- background-position
+
+属性值之一缺失并不要紧，只要按照此顺序设置其他值即可。请注意，在上面的例子中，我们没有使用 background-attachment 属性，因为它没有值。
+
+
+
+## CSS Border - 简写属性
+
+为了缩减代码，也可以在一个属性中指定所有单独的边框属性。
+
+`border` 属性是以下各个边框属性的简写属性：
+
+- `border-width`
+- `border-style`（必需）
+- `border-color`
+
+### 实例
+
+```css
+p {
+  border: 5px solid red;
+}
+```
+
+
+
+
+
+## Margin - 简写属性
+
+如果 `margin` 属性有四个值：
+
+- margin: 25px 50px 75px 100px;
+
+- - 上外边距是 25px
+  - 右外边距是 50px
+  - 下外边距是 75px
+  - 左外边距是 100px
+
+### 
+
+如果 `margin` 属性设置三个值：
+
+- margin: 25px 50px 75px;
+
+- - 上外边距是 25px
+  - 右和左外边距是 50px
+  - 下外边距是 75px
+
+
+
+如果 `margin` 属性设置两个值：
+
+- margin: 25px 50px;
+
+- - 上和下外边距是 25px
+  - 右和左外边距是 50px
+
+
+
+如果 `margin` 属性设置了一个值：
+
+- margin: 25px;
+
+- - 所有四个外边距都是 25px
 
