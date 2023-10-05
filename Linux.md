@@ -1103,6 +1103,29 @@ console有多个取值时，使用最后- -个取值来判断
 
 ### 📉I2C应用编程
 
+#### SMBus协议
+
+SMBus是I2C协议的一-个子集
+SMBus: System Management Bus,系统管理总线。
+SMBus最初的目的是为智能电池、充电电池、其他微控制器之间的通信链路而定义的。
+SMBus也被用来连接各种设备，包括电源相关设备，系统传感器，EEPROM通讯设备等等。
+SMBus为系统和电源管理这样的任务提供了一条控制总线，使用SMBus的系统，设备之间发送和接收消息都是
+通过SMBus,而不是使用单独的控制线，这样可以节省设备的管脚数。
+SMBus是基于I2C协议的，SMBus要求更严格, SMBus是I2C协议的子集。
+<img src="C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231005210946157.png" alt="image-20231005210946157" style="zoom: 50%;" />
+
+
+
+#### I2C系统的重要结构体
+
+
+
+#### I2C_Tools
+
+无需编写驱动直接访问设备
+
+
+
 
 
 
