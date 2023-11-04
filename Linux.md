@@ -1325,7 +1325,7 @@ ps -t<终端机编号> -ef|grep xxxxxxxx：在指定终端机下，列出包含�
 
 利用fork函数：
 
-![image-20231016182323995](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231016182323995.png)
+![image-20231024160424657](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231024160424657.png)
 
 
 
