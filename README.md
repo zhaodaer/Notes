@@ -1,4 +1,4 @@
-![image-20231013171304478](C:\Users\东瑞\AppData\Roaming\Typora\typora-user-images\image-20231013171304478.png)
+![image-20231013171304478](img\image-20231013171304478.png)
 
 # zhaodaer's Notebook
 >**打不倒我的，只会让我更强大 ！**
@@ -8,7 +8,7 @@
 > - 希望做一个终身学习者
 > - **Daer 的公众号**：[访问链接](https://mp.weixin.qq.com/s/NTRnfdPcr2pVnTvhFMYJCg)
 
-![222](E:\111\222.png)
+
 
 
 
